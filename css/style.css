@@ -221,7 +221,7 @@ a {
 .sidebar_space {
     position: fixed;
     display: none;
-    top: 90px;
+    top: 91px;
     right: 0px;
     width: 250px;
     height: 100%;
@@ -1161,7 +1161,7 @@ iframe {
 
     .sidebar {
         left: -250px;
-        top: 90px;
+        top: 91px;
     }
 
     .navbar_menu {

@@ -653,6 +653,7 @@ pre.code {
     color: #F57423;
     margin-bottom: 3px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .heading {
@@ -1124,7 +1125,7 @@ iframe {
 .copyright_full {
     width: 100%;
     padding: 10px 0px;
-    background-color: #62338fb3;
+    background-color: #62338F;
     z-index: 9999999;
 }
 
@@ -1163,6 +1164,53 @@ iframe {
     font-weight: 600;
     color: #222;
     margin: 7px 20px;
+}
+
+.students {
+    width: 100%;
+    padding: 15px;
+    padding-top: 0px;
+    border-radius: 10px;
+}
+
+.student_box {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 0 #0000001a;
+}
+
+.student_box img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.student_box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #62338F;
+    margin-bottom: 4px;
+}
+
+.student_box h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #F57423;
+    margin-bottom: 4px;
+}
+
+.student_box h6 {
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+.only_mobile {
+    display: none;
 }
 
 .bg_color {
@@ -1364,6 +1412,14 @@ iframe {
         font-size: 13px;
     }
 
+    .students {
+        padding: 5px;
+    }
+
+    .only_mobile {
+        display: block;
+    }
+
     .sign_up img {
         width: 100%;
         margin-left: 0px;
@@ -1417,7 +1473,7 @@ iframe {
 
 #backToTop {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     display: none;
     /* Initially hidden */

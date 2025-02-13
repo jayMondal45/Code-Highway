@@ -51,6 +51,11 @@ a {
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    scroll-behavior: smooth;
+}
+
+.navbar-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
 }
 
 .navbar-container::-webkit-scrollbar {

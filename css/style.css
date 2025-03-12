@@ -1413,6 +1413,123 @@ textarea:focus {
   background-color: #f57423;
 }
 
+/* Input Fields */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #3949ab;
+  box-shadow: 0 0 8px rgba(57, 73, 171, 0.3);
+}
+
+.input-group label {
+  position: absolute;
+  top: 30%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+  top: 0;
+  left: 10px;
+  font-size: 12px;
+  color: #3949ab;
+  background: white;
+  padding: 0 5px;
+}
+
+.input-group .icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+  transition: color 0.3s ease;
+}
+
+.input-group input:focus~.icon {
+  color: #3949ab;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #3949ab, #5c6bc0);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5c6bc0, #3949ab);
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 600px) {
+
+  .form-container {
+      width: 100%;
+      max-width: none;
+  }
+
+  .input-group input {
+      padding: 10px 10px 10px 40px;
+      font-size: 13px;
+  }
+
+  .input-group label {
+      font-size: 13px;
+  }
+
+  .input-group input:focus+label,
+  .input-group input:not(:placeholder-shown)+label {
+      font-size: 11px;
+  }
+
+  .input-group .icon {
+      font-size: 14px;
+  }
+
+  button {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  /* Adjust Links */
+  .signup-link,
+  .login-link {
+      font-size: 13px;
+  }
+}
+
 @media (max-width: 992px) {
   body {
     text-align: justify;

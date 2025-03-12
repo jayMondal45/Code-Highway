@@ -134,29 +134,26 @@
             </div>
             <div class="col-lg-1 col-0"></div>
             <div class="col-lg-5 form">
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <form>
+                    <div class="input-group">
+                        <input type="text" id="fullname" name="fullname" required placeholder=" ">
+                        <label for="fullname">Full Name</label>
+                        <span class="icon">👤</span>
                     </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Email</label>
+                        <span class="icon">📧</span>
                     </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                    <div class="input-group">
+                        <input type="text" id="message" name="message" required placeholder=" ">
+                        <label for="password">Message</label>
+                        <span class="icon">📩</span>
                     </div>
-
-                    <div class="form-group">
-                        <label for="message" id="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="submit">
+                        <span>Submit</span>
+                        <span class="arrow">→</span>
+                    </button>
                 </form>
             </div>
         </div>

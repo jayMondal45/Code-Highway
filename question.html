@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#62338F" />
+    <title>CodeHighway</title>
+    <!----------- Bootstrap 4 Css ----------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!---------- My Css ----------->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!---------- Font awesome 6 cdn ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/theme/dracula.min.css" />
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!--------- Swiper slider ---------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container full_body home_page_top">
+        <div class="row">
+            <div class="col-12 navbar home_page_nav">
+                <ul class="navbar-container">
+                    <li><a href="html_course.html">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">BOOTSTRAP</a></li>
+                    <li><a href="#">JQUERY</a></li>
+                    <li><a href="#">REACT JS</a></li>
+                    <li><a href="#">NODE JS</a></li>
+                    <li><a href="#">ANGULAR</a></li>
+                    <li><a href="#">VUE JS</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">MYSQL</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">LARAVEL</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">DJANGO</a></li>
+                    <li><a href="#">MONGODB</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">C#</a></li>
+                    <li><a href="#">ASP</a></li>
+                    <li><a href="#">.NET</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">GO</a></li>
+                    <li><a href="#">KOTLIN</a></li>
+                    <li><a href="#">SWIFT</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">GIT</a></li>
+                    <li><a href="#">GITHUB</a></li>
+                    <li><a href="#">EXCEL</a></li>
+                    <li><a href="#">XML</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container navbar_full">
+        <div class="navbar_main">
+            <div class="row">
+                <div class="col-lg-2 col-6 navbar_logo">
+                    <a href="index.html"><img src="img/codehighway_logo.png" /></a>
+                </div>
+                <div class="col-8 navbar_menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="course.html">COURCES</a></li>
+                        <li><a href="interview.html" style="color: #f57423">INTERVIEW Q</a></li>
+                        <li><a href="help.html">HELP DESK</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="navbar_btn">
+                        <a href="login.html">Login</a>
+                    </div>
+                    <div class="navbar_btn" style="margin-right: 0px">
+                        <a href="signup.html">SignUp</a>
+                    </div>
+                </div>
+                <!-- Hamburger Icon -->
+                <div class="hamburger_icon" id="hamburger_icon" onclick="toggleNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="sidebar_space" id="sidebar_space">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="course.html">Cources</a>
+                    <a href="interview.html" style="background-color: #62338f; color: #fff">Interview Questions</a>
+                    <a href="help.html">Help Desk</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------================= Mini slider start ==========-------------->
+    <div class="mini_banner">
+        <div class="section_banner">
+            <h1>Interview Questions & Answer</h1>
+            <h5><a href="index.html">Home</a> / <a href="interview.html">Interview Q</a> / Questions</h5>
+        </div>
+    </div>
+
+    <!---------------============== Questions section start ==========------------>
+
+    <div class="container new_section">
+        <div class="row">
+            <div class="col-12 introduction_box2">
+                <h3 class="theory_heading" id="center_heading">Html Interview Question & Answer:</h3>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>1. What is HTML and why is it important?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">HTML (HyperText Markup Language) is the standard language
+                            for
+                            creating web pages. It structures content using elements like headings,
+                            paragraphs,
+                            images, and links. It is essential because it forms the backbone of web
+                            development.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>2. What are the key differences between HTML4 and HTML5?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">HTML5 introduced new elements like &lt;article&gt;,
+                            &lt;section&gt;, &lt;video&gt;, and &lt;audio&gt;, improved form controls, and
+                            removed outdated elements from HTML4.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>3. What is the purpose of the &lt;head&gt; and &lt;body&gt; sections in an
+                                HTML document?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The &lt;head&gt; section contains metadata, styles, and
+                            scripts,
+                            while the &lt;body&gt; section contains the actual content that appears on the
+                            webpage.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>4. What are semantic HTML elements and why should we use them?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">Semantic elements like &lt;header&gt;, &lt;nav&gt;,
+                            &lt;article&gt;, and &lt;footer&gt; provide meaning to web content, improving
+                            accessibility, SEO, and code readability.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>5. How does HTML work with CSS and JavaScript?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">HTML structures the webpage, CSS styles it, and JavaScript
+                            adds
+                            interactivity, creating a complete and dynamic web experience.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>6. What is the difference between &lt;div&gt; and &lt;span&gt;
+                                tags?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">&lt;div&gt; is a block-level element used for grouping
+                            larger
+                            sections, while &lt;span&gt; is an inline element for styling parts of text
+                            within a
+                            line.</div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>7. How can I make my HTML page responsive?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">Use CSS media queries, frameworks like Bootstrap, and the
+                            viewport meta tag: &lt;meta name="viewport" content="width=device-width,
+                            initial-scale=1"&gt;.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>8. What is the difference between HTML and XHTML?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">HTML is more lenient with syntax, while XHTML is stricter and follows XML rules, requiring tags to be properly nested, lowercase, and closed.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>9. What is the purpose of the &lt;meta&gt; tag in HTML?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The &lt;meta&gt; tag provides metadata about the HTML document, such as author, description, keywords, and viewport settings, which help search engines and browsers understand the page content.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>10. What is the difference between &lt;section&gt; and &lt;div&gt; tags in HTML?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The &lt;section&gt; tag represents a thematic grouping of content with a heading, while &lt;div&gt; is a generic container for styling and layout purposes.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>11. What is the use of the "alt" attribute in images?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The "alt" attribute provides alternative text for an image, which is displayed if the image cannot be loaded. It also helps with accessibility and SEO.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>12. How can you create a hyperlink that opens in a new tab?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">Use the target attribute with "_blank": &lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>13. What is the difference between inline, block, and inline-block elements?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">Inline elements do not start on a new line and take up only necessary width. Block elements start on a new line and occupy full width. Inline-block elements behave like inline elements but allow setting width and height.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>14. What is the purpose of the "action" and "method" attributes in HTML forms?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The "action" attribute defines the URL to which the form data is sent, while the "method" attribute specifies how the data is sent: "GET" appends data to the URL, "POST" sends data in the request body.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>15. What is the difference between &lt;em&gt; and &lt;strong&gt; tags in HTML?</span>
+                            <span class="icon">+</span>
+                        </div>
+                        <div class="faq-answer">The &lt;em&gt; tag emphasizes text with italics, while the &lt;strong&gt; tag indicates strong importance, usually shown in bold.</div>
+                    </div>
+                    
+                </div>
+                <center>
+                    <div class="navbar_btn" style="width: 140px; margin-top: 20px;" id="btn">
+                        <a href="#">Download Pdf</a>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+
+    
+    <!------------Copyright section start ------->
+    <div class="copyright_full">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Copyright © 2025 All Rights Reserved - CodeHighway.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="backToTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-computer-mouse"></i>
+    </div>
+
+    <!----------- Bootstrap 4 Js ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+    <script src="js/menubar.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/html-editor.js"></script>
+    <!---------- Mouse scroll ---------->
+    <script src="js/mouse_scroll.js"></script>
+    <!---------- Teacher slider ----------->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/teacher_slider.js"></script>
+
+    <script src="js/back_to_top.js"></script>
+</body>
+
+</html>

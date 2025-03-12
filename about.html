@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#62338F" />
+    <title>CodeHighway</title>
+    <!----------- Bootstrap 4 Css ----------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!---------- My Css ----------->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!---------- Font awesome 6 cdn ------------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/theme/dracula.min.css" />
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!--------- Swiper slider ---------->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container full_body home_page_top">
+        <div class="row">
+            <div class="col-12 navbar home_page_nav">
+                <ul class="navbar-container">
+                    <li><a href="html_course.html">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JAVASCRIPT</a></li>
+                    <li><a href="#">BOOTSTRAP</a></li>
+                    <li><a href="#">JQUERY</a></li>
+                    <li><a href="#">REACT JS</a></li>
+                    <li><a href="#">NODE JS</a></li>
+                    <li><a href="#">ANGULAR</a></li>
+                    <li><a href="#">VUE JS</a></li>
+                    <li><a href="#">SQL</a></li>
+                    <li><a href="#">MYSQL</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">PHP</a></li>
+                    <li><a href="#">LARAVEL</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">DJANGO</a></li>
+                    <li><a href="#">MONGODB</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">C#</a></li>
+                    <li><a href="#">ASP</a></li>
+                    <li><a href="#">.NET</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">GO</a></li>
+                    <li><a href="#">KOTLIN</a></li>
+                    <li><a href="#">SWIFT</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">GIT</a></li>
+                    <li><a href="#">GITHUB</a></li>
+                    <li><a href="#">EXCEL</a></li>
+                    <li><a href="#">XML</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container navbar_full">
+        <div class="navbar_main">
+            <div class="row">
+                <div class="col-lg-2 col-6 navbar_logo">
+                    <a href="index.html"><img src="img/codehighway_logo.png" /></a>
+                </div>
+                <div class="col-8 navbar_menu">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html" style="color: #f57423">ABOUT US</a></li>
+                        <li><a href="course.html">COURCES</a></li>
+                        <li><a href="interview.html">INTERVIEW Q</a></li>
+                        <li><a href="help.html">HELP DESK</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="navbar_btn">
+                        <a href="login.html">Login</a>
+                    </div>
+                    <div class="navbar_btn" style="margin-right: 0px">
+                        <a href="signup.html">SignUp</a>
+                    </div>
+                </div>
+                <!-- Hamburger Icon -->
+                <div class="hamburger_icon" id="hamburger_icon" onclick="toggleNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="sidebar_space" id="sidebar_space">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" style="background-color: #62338f; color: #fff">About Us</a>
+                    <a href="course.html">Cources</a>
+                    <a href="interview.html">Interview Questions</a>
+                    <a href="help.html">Help Desk</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------================= Mini slider start ==========-------------->
+    <div class="mini_banner">
+        <div class="section_banner">
+            <h1>About Us</h1>
+            <h5><a href="index.html">Home</a> / About Us</h5>
+        </div>
+    </div>
+
+    <!-----------============ About section start =================------------->
+
+    <div class="container new_section">
+        <div class="row">
+            <div class="col-lg-7 col-12 about_left">
+                <h4 id="subheading">About Us</h4>
+                <h3 id="heading">Weclome to Codehighway</h3>
+                <p class="description">CodeHighway is an online coding learning platform designed to make programming
+                    simple, interactive, and accessible for everyone — from beginners taking their first steps in coding
+                    to experienced developers sharpening their skills. Like a smooth highway guiding you through the
+                    world of programming, CodeHighway offers clear, step-by-step tutorials, hands-on exercises, and
+                    real-world projects across popular languages and technologies. With a user-friendly interface and
+                    practical examples, it empowers learners to build their coding confidence and accelerate their
+                    journey towards becoming skilled developers. Start your coding adventure with CodeHighway — where
+                    learning meets innovation!</p>
+                <div class="navbar_btn" style="width: 130px;">
+                    <a href="#">Join Now</a>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 about_image">
+                <img src="img/about2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!----------------- Mission & Vision section start ---------------->
+
+    <div class="container new_section" style="margin-top: 0px;">
+        <div class="row custom-row">
+            <div class="col-lg-6 col-12 color_bg1">
+                <h4 id="subheading">Our Mission</h4>
+                <p class="description">Our mission at CodeHighway is to empower individuals by making coding education
+                    simple, accessible, and practical. We strive to bridge the gap between beginners and professional
+                    developers by offering clear, interactive, and real-world-focused programming tutorials. Our goal is
+                    to create a learning environment where anyone can confidently build their technical skills, unlock
+                    their creative potential, and accelerate their journey in the world of technology.</p>
+            </div>
+            <div class="col-lg-6 col-12 color_bg2">
+                <h4 id="subheading">Our Vision</h4>
+                <p class="description">Our vision at CodeHighway is to become a global leader in coding education,
+                    inspiring a new generation of developers and innovators. We aim to build a dynamic learning platform
+                    where technology enthusiasts from all backgrounds can master programming skills, collaborate, and
+                    create impactful solutions. By fostering a community of continuous learners, we envision a future
+                    where coding is not a barrier but a bridge to endless opportunities in the digital world.</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------Copyright section start ------->
+    <div class="copyright_full">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Copyright © 2025 All Rights Reserved - CodeHighway.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="backToTop" onclick="scrollToTop()">
+        <i class="fa-solid fa-computer-mouse"></i>
+    </div>
+
+    <!----------- Bootstrap 4 Js ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.12/mode/javascript/javascript.min.js"></script>
+    <script src="js/menubar.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/html-editor.js"></script>
+    <!---------- Mouse scroll ---------->
+    <script src="js/mouse_scroll.js"></script>
+    <!---------- Teacher slider ----------->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/teacher_slider.js"></script>
+
+    <script src="js/back_to_top.js"></script>
+</body>
+
+</html>

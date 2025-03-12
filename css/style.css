@@ -1312,7 +1312,7 @@ iframe {
   /* Ensure responsiveness */
 }
 
-.col-lg-6 {
+.custom-row .col-lg-6 {
   flex: 1;
   /* Ensure both columns take equal space */
   min-width: 0;

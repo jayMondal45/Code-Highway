@@ -1496,38 +1496,75 @@ button:hover {
 @media (max-width: 600px) {
 
   .form-container {
-      width: 100%;
-      max-width: none;
+    width: 100%;
+    max-width: none;
   }
 
   .input-group input {
-      padding: 10px 10px 10px 40px;
-      font-size: 13px;
+    padding: 10px 10px 10px 40px;
+    font-size: 13px;
   }
 
   .input-group label {
-      font-size: 13px;
+    font-size: 13px;
   }
 
   .input-group input:focus+label,
   .input-group input:not(:placeholder-shown)+label {
-      font-size: 11px;
+    font-size: 12px;
   }
 
   .input-group .icon {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   button {
-      padding: 10px;
-      font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   /* Adjust Links */
   .signup-link,
   .login-link {
-      font-size: 13px;
+    font-size: 13px;
   }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.run-btn, .copy-btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.run-btn {
+  background-color: #62338f;
+  color: white;
+}
+
+.copy-btn {
+  background-color: #f57423;
+  color: white;
+}
+
+.run-btn:hover {
+  background-color: #f57423;
+}
+
+.copy-btn:hover {
+  background-color: #62338f;
+}
+
+#mobile_view{
+  display: none;
 }
 
 @media (max-width: 992px) {

@@ -767,13 +767,9 @@
                     <!-- Editor Panel (Left Side) -->
                     <div class="editor-panel">
                         <div class="tab-buttons">
-                            <button class="tab-btn active" onclick="switchTab('html')">
-                                HTML
-                            </button>
+                            <button class="tab-btn active" onclick="switchTab('html')">HTML</button>
                             <button class="tab-btn" onclick="switchTab('css')">CSS</button>
-                            <button class="tab-btn" onclick="switchTab('js')">
-                                JavaScript
-                            </button>
+                            <button class="tab-btn" onclick="switchTab('js')">JavaScript</button>
                         </div>
 
                         <div class="editor-container">
@@ -791,9 +787,15 @@
                             </div>
                         </div>
 
-                        <button class="run-btn" onclick="updatePreview()">
-                            <i class="fas fa-play"></i> Run Code
-                        </button>
+                        <!-- Buttons: Run Code & Copy Code -->
+                        <div class="button-group">
+                            <button class="run-btn" onclick="updatePreview()">
+                                <i class="fas fa-play"></i> Run Code
+                            </button>
+                            <button class="copy-btn" onclick="copyCode()">
+                                <i class="fas fa-copy"></i> Copy Code
+                            </button>
+                        </div>
                     </div>
 
                     <!-- Output Panel (Right Side) -->
@@ -810,13 +812,119 @@
 
     <!--------- Students section start --------->
 
-    <div class="container new_section" style="margin-bottom: 30px;">
-        <div class="row">
-            <div class="col-12 color_bg2">
-                <h4 class="subheading">OUR LEARNERS</h4>
-                <h3 class="heading">Real learners, Real Results</h3>
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-6 students">
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<div class="container new_section" style="margin-bottom: 30px;">
+    <div class="row">
+        <div class="col-12 color_bg2">
+            <h4 class="subheading">OUR LEARNERS</h4>
+            <h3 class="heading">Real learners, Real Results</h3>
+            
+            <!-- Normal Grid for Desktop/Tablets -->
+            <div class="row d-none d-md-flex">
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="student_box">
+                        <img src="img/teacher/teacher2.jpg">
+                        <h4>Name</h4>
+                        <h5>Profession</h5>
+                        <h6>[Company Name]</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Swiper Slider (Only for Mobile) -->
+            <div class="swiper-container d-md-none">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -824,7 +932,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -832,7 +940,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -840,7 +948,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -848,7 +956,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -856,7 +964,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -864,7 +972,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -872,7 +980,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -880,7 +988,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -888,7 +996,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -896,7 +1004,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -904,7 +1012,7 @@
                             <h6>[Company Name]</h6>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-6 students">
+                    <div class="swiper-slide">
                         <div class="student_box">
                             <img src="img/teacher/teacher2.jpg">
                             <h4>Name</h4>
@@ -913,9 +1021,51 @@
                         </div>
                     </div>
                 </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    if (window.innerWidth < 768) { // Only initialize Swiper on mobile screens
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        });
+    }
+</script>
+
+    
+    <!-- Swiper Initialization Script -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1, // Default for mobile
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: { slidesPerView: 3 }, // Tablet
+                992: { slidesPerView: 5 }  // Desktop
+            }
+        });
+    </script>
+    
 
     <!---------- Sign up section start --------->
 
@@ -984,6 +1134,9 @@
     <script src="js/teacher_slider.js"></script>
 
     <script src="js/back_to_top.js"></script>
+
+    <!----------- Code editor js ---------->
+    <script src="js/code-editor.js"></script>
 </body>
 
 </html>

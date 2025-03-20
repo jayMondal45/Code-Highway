@@ -385,6 +385,22 @@ a {
   background-color: #fff;
   border-left: 5px solid #f57423;
   padding-top: 20px;
+  position: relative;
+}
+
+.copy-code {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 12px;
+  width: 70px;
+  background-color: #ccc;
+  text-align: center;
+  padding: 5px 0px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  border-radius: 3px;
 }
 
 pre.code {
@@ -395,6 +411,7 @@ pre.code {
 
 .tag {
   color: #f57423;
+  text-align: left !important;
 }
 
 .attr {
@@ -1003,15 +1020,11 @@ pre.code {
   flex-grow: 1;
   overflow: auto;
   background-color: #fff;
+  position: relative;
 }
 
 .editor.active {
   display: block;
-}
-
-.CodeMirror {
-  height: calc(100vh - 120px);
-  /* Adjust height to fit within the container */
 }
 
 .output-panel {
@@ -1468,28 +1481,6 @@ textarea:focus {
   color: #3949ab;
 }
 
-/* Button */
-button {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(135deg, #3949ab, #5c6bc0);
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #5c6bc0, #3949ab);
-  transform: translateY(-2px);
-}
 
 /* Responsive Styles for Mobile Screens */
 @media (max-width: 600px) {
@@ -1535,7 +1526,8 @@ button:hover {
   margin-top: 10px;
 }
 
-.run-btn, .copy-btn {
+.run-btn,
+.copy-btn {
   padding: 8px 15px;
   font-size: 14px;
   border: none;
@@ -1560,10 +1552,6 @@ button:hover {
 
 .copy-btn:hover {
   background-color: #62338f;
-}
-
-#mobile_view{
-  display: none;
 }
 
 @media (max-width: 992px) {

@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-8 navbar_menu">
                         <ul>
-                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="index.html" style="color: #f57423">HOME</a></li>
                             <li><a href="about.html">ABOUT US</a></li>
                             <li><a href="course.html">COURCES</a></li>
                             <li><a href="interview.html">INTERVIEW Q</a></li>
@@ -219,17 +219,18 @@
                         <div class="col-12 introduction_box">
                             <h3 class="theory_heading">A Simple Example</h3>
                             <div class="col-12 example_box">
+                                <span class="copy-code" onclick="copyCode()"><i class="fa-solid fa-copy"></i> Copy</span>
                                 <pre class="code">
-                                <span class="tag">&lt;!DOCTYPE <span class="attr">html</span>&gt;</span>
-                                <span class="tag">&lt;html&gt;</span>
-                                <span class="tag">&lt;head&gt;</span>
-                                    <span class="tag">&lt;title&gt;</span><span class="text">Page Title</span><span class="tag">&lt;/title&gt;</span>
-                                <span class="tag">&lt;/head&gt;</span>
-                                <span class="tag">&lt;body&gt;</span>
-                                    <span class="tag">&lt;h1&gt;</span><span class="text">My First Heading</span><span class="tag">&lt;/h1&gt;</span>
-                                    <span class="tag">&lt;p&gt;</span><span class="text">My first paragraph.</span><span class="tag">&lt;/p&gt;</span>
-                                <span class="tag">&lt;/body&gt;</span>
-                                <span class="tag">&lt;/html&gt;</span>
+                                    <span class="tag">&lt;!DOCTYPE <span class="attr">html</span>&gt;</span>
+                                    <span class="tag">&lt;html&gt;</span>
+                                    <span class="tag">&lt;head&gt;</span>
+                                        <span class="tag">&lt;title&gt;</span><span class="text">Page Title</span><span class="tag">&lt;/title&gt;</span>
+                                    <span class="tag">&lt;/head&gt;</span>
+                                    <span class="tag">&lt;body&gt;</span>
+                                        <span class="tag">&lt;h1&gt;</span><span class="text">My First Heading</span><span class="tag">&lt;/h1&gt;</span>
+                                        <span class="tag">&lt;p&gt;</span><span class="text">My first paragraph.</span><span class="tag">&lt;/p&gt;</span>
+                                    <span class="tag">&lt;/body&gt;</span>
+                                    <span class="tag">&lt;/html&gt;</span>
                                 </pre>
                             </div>
                         </div>
@@ -539,6 +540,19 @@
     <!---------- Mouse scroll ---------->
     <script src="js/mouse_scroll.js"></script>
     <script src="js/back_to_top.js"></script>
+
+    <script>
+        function copyCode() {
+            const codeBlock = document.querySelector('.code');
+            const textArea = document.createElement('textarea');
+            textArea.value = codeBlock.innerText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+            alert('Code copied to clipboard!');
+        }
+    </script>
 </body>
 
 </html>
